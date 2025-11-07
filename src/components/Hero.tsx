@@ -13,11 +13,11 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center mb-2">
             <img 
               src={mwtechsLogo} 
               alt="MWTECHS Logo" 
-              className="h-20 sm:h-24 lg:h-28 w-auto object-contain"
+              className="h-12 sm:h-14 w-auto object-contain drop-shadow-lg"
             />
           </div>
           
