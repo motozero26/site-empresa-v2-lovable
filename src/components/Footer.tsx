@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react";
+import mwtechsLogo from "@/assets/mwtechs-logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,11 +9,9 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="font-semibold text-foreground mb-4 text-lg">
-              Assistência Técnica
-            </h3>
+            <img src={mwtechsLogo} alt="MWTECHS" className="h-12 w-auto mb-4" />
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Especializada em computadores e notebooks com atendimento profissional e transparente.
+              Assistência técnica especializada em computadores e notebooks com qualidade, agilidade e transparência.
             </p>
           </div>
           
@@ -59,7 +58,7 @@ const Footer = () => {
         
         <div className="border-t border-border pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Assistência Técnica. Todos os direitos reservados.
+            © {currentYear} MWTECHS - Assistência Técnica Especializada. Todos os direitos reservados.
           </p>
         </div>
       </div>
