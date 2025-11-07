@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import mwtechsLogo from "@/assets/mwtechs-logo.png";
+import mwtechsLogo from "@/assets/logo.png";
 
 const Hero = () => {
   const handleCTA = () => {
