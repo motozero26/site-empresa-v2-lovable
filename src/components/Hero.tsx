@@ -12,12 +12,12 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMzYjgyZjYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItMnptMC0yYTIgMiAwIDAgMSAyIDJ2MmgtMnYtMmgtMnYtMmgyem0tMiAydjJoLTJ2LTJoMnptLTItMmgydjJoLTJ2LTJ6bTItMmgydjJoLTJ2LTJ6bTItMmgydjJoLTJ2LTJ6bTAtMmgydjJoLTJ2LTJ6bTItMmgydjJoLTJ2LTJ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-40"></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-8 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-          <div className="flex justify-center mb-2">
+        <div className="max-w-4xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
+          <div className="flex justify-center mb-8 animate-fade-in">
             <img 
               src={mwtechsLogo} 
-              alt="MWTECHS Logo" 
-              className="h-12 sm:h-14 w-auto object-contain drop-shadow-lg"
+              alt="MWTECHS - Assistência Técnica Especializada" 
+              className="h-16 sm:h-20 lg:h-24 w-auto object-contain drop-shadow-2xl hover-scale"
             />
           </div>
           
