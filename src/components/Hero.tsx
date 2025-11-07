@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
+import mwtechsLogo from "@/assets/mwtechs-logo.png";
 
 const Hero = () => {
   const handleCTA = () => {
@@ -12,6 +13,14 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-in fade-in slide-in-from-bottom-8 duration-1000">
+          <div className="flex justify-center mb-6">
+            <img 
+              src={mwtechsLogo} 
+              alt="MWTECHS Logo" 
+              className="h-20 sm:h-24 lg:h-28 w-auto object-contain"
+            />
+          </div>
+          
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-tight">
             Assistência Técnica Especializada em{" "}
             <span className="text-primary">Computadores e Notebooks</span>
