@@ -8,17 +8,21 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-primary/5 via-background to-muted/30 overflow-hidden">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMzYjgyZjYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItMnptMC0yYTIgMiAwIDAgMSAyIDJ2MmgtMnYtMmgtMnYtMmgyem0tMiAydjJoLTJ2LTJoMnptLTItMmgydjJoLTJ2LTJ6bTItMmgydjJoLTJ2LTJ6bTItMmgydjJoLTJ2LTJ6bTAtMmgydjJoLTJ2LTJ6bTItMmgydjJoLTJ2LTJ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-40"></div>
+    <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-background via-background to-muted overflow-hidden">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMDhiZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzR2Mi0yem0wLTJhMiAyIDAgMCAxIDIgMnYyaC0ydi0yaC0ydi0yaDJ6bS0yIDJ2MmgtMnYtMmgyem0tMi0yaDJ2MmgtMnYtMnptMi0yaDJ2MmgtMnYtMnptMi0yaDJ2MmgtMnYtMnptMC0yaDJ2MmgtMnYtMnptMi0yaDJ2MmgtMnYtMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-30"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-secondary/10"></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <div className="flex justify-center mb-8 animate-fade-in">
-            <img 
-              src={mwtechsLogo} 
-              alt="MWTECHS - Assistência Técnica Especializada" 
-              className="h-24 sm:h-28 lg:h-32 w-auto object-contain drop-shadow-2xl hover-scale"
-            />
+            <div className="relative p-4 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 backdrop-blur-sm border border-primary/30">
+              <img 
+                src={mwtechsLogo} 
+                alt="MWTECHS - Assistência Técnica Especializada" 
+                className="h-24 sm:h-28 lg:h-32 w-auto object-contain hover-scale"
+                style={{ filter: 'drop-shadow(0 0 20px rgba(0, 139, 255, 0.5)) brightness(1.2) contrast(1.1)' }}
+              />
+            </div>
           </div>
           
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-tight">
