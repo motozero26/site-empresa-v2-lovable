@@ -17,7 +17,7 @@ const Hero = () => {
             <img 
               src={mwtechsLogo} 
               alt="MWTECHS - Assistência Técnica Especializada" 
-              className="h-16 sm:h-20 lg:h-24 w-auto object-contain drop-shadow-2xl hover-scale"
+              className="h-24 sm:h-28 lg:h-32 w-auto object-contain drop-shadow-2xl hover-scale"
             />
           </div>
           
