@@ -4,7 +4,7 @@ import mwtechsLogo from "@/assets/logo.png";
 
 const Hero = () => {
   const handleCTA = () => {
-    window.open('https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento sem compromisso.', '_blank');
+    window.open('https://wa.me/5584994295162?text=Ol%C3%A1! Gostaria de solicitar um orçamento sem compromisso.', '_blank');
   };
 
   return (
