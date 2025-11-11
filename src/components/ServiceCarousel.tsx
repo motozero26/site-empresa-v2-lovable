@@ -32,7 +32,7 @@ const services = [
   },
   {
     image: service4,
-    title: "Reparos Apple",
+    title: "Reparos MacBooks",
     description: "Assistência técnica especializada em produtos Apple"
   },
 ];
