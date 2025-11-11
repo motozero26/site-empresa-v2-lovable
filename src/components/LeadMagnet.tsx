@@ -3,7 +3,7 @@ import { Gift, Clock } from "lucide-react";
 
 const LeadMagnet = () => {
   const handleCTA = () => {
-    window.open('https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um diagnóstico gratuito do meu computador.', '_blank');
+    window.open('https://wa.me/5584994295162?text=Ol%C3%A1! Gostaria de solicitar um diagnóstico gratuito do meu computador.', '_blank');
   };
 
   return (
