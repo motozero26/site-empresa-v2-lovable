@@ -30,7 +30,7 @@ const Hero = () => {
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Soluções rápidas, seguras e profissionais para conserto, montagem e limpeza do seu computador.
             <br className="hidden sm:block" />
-            <strong className="text-foreground">Fale com nossos técnicos</strong> e descubra como podemos ajudar.
+            <strong className="text-foreground"> Fale com nossos técnicos</strong> e descubra como podemos ajudar.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
