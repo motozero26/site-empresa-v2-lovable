@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 
 const FinalCTA = () => {
   const handleCTA = () => {
-    window.open('https://wa.me/5511999999999?text=Olá! Gostaria de falar com um técnico sobre meu computador.', '_blank');
+    window.open('https://wa.me/5584994295162?text=Ol%C3%A1! Gostaria de falar com um técnico sobre meu computador.', '_blank');
   };
 
   return (
