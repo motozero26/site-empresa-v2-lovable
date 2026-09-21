@@ -23,8 +23,8 @@ const Footer = () => {
               <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
               <div>
                 <strong className="block text-foreground font-semibold">Localização & Atendimento</strong>
-                <span className="text-muted-foreground">{companyConfig.address.city}, {companyConfig.address.state}</span>
-                <p className="text-xs text-muted-foreground mt-0.5">Atendemos Natal e região metropolitana</p>
+                <span className="text-muted-foreground">{companyConfig.address.street} - {companyConfig.address.neighborhood}</span>
+                <p className="text-xs text-muted-foreground mt-0.5">{companyConfig.address.city}, {companyConfig.address.state} • CEP {companyConfig.address.postalCode}</p>
               </div>
             </div>
 

@@ -52,24 +52,30 @@ export const companyConfig: CompanyConfig = {
   email: "assistencia.mwtechs@gmail.com",
   website: "https://www.mwtechs.com.br",
   address: {
-    street: "[INSERIR ENDEREÇO / RUA E NÚMERO]",
-    neighborhood: "[INSERIR BAIRRO]",
+    street: "Rua Alto da Boa Vista, 116",
+    neighborhood: "Ponta Negra",
     city: "Natal",
     state: "RN",
     country: "BR",
-    postalCode: "[INSERIR CEP]",
+    postalCode: "59090-310",
   },
   serviceArea: [
     "Natal",
-    "Parnamirim [CONFIRMAR ATENDIMENTO]",
-    "Região Metropolitana de Natal [CONFIRMAR ATENDIMENTO]",
+    "Ponta Negra",
+    "Parnamirim",
+    "Região Metropolitana de Natal",
   ],
-  openingHours: "[INSERIR HORÁRIO REAL - EX: Segunda a Sexta: 08h às 18h]",
+  openingHours: "Segunda a Sexta: 08:00 às 18:00 | Sábado: 08:00 às 12:00",
   openingHoursSpecification: [
     {
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       opens: "08:00",
       closes: "18:00",
+    },
+    {
+      dayOfWeek: ["Saturday"],
+      opens: "08:00",
+      closes: "12:00",
     },
   ],
   socialLinks: {

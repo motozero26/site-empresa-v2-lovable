@@ -22,8 +22,8 @@ const services = [
   },
   {
     image: service2,
-    title: "Conserto de Smartphones",
-    description: "Troca de telas e componentes de celulares"
+    title: "Reparo de Placa-Mãe",
+    description: "Diagnóstico eletrônico avançado e recuperação de circuitos"
   },
   {
     image: service3,

@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
+import { getWhatsAppUrl } from "@/config/company";
 
 const FinalCTA = () => {
   const handleCTA = () => {
-    window.open('https://wa.me/5584994295162?text=Ol%C3%A1! Gostaria de falar com um técnico sobre meu computador.', '_blank');
+    window.open(getWhatsAppUrl("Olá! Gostaria de falar com um técnico sobre meu computador ou notebook."), "_blank");
   };
 
   return (

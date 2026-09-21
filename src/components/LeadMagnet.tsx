@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Gift, Clock } from "lucide-react";
+import { getWhatsAppUrl } from "@/config/company";
 
 const LeadMagnet = () => {
   const handleCTA = () => {
-    window.open('https://wa.me/5584994295162?text=Ol%C3%A1! Gostaria de solicitar um diagnóstico gratuito do meu computador.', '_blank');
+    window.open(getWhatsAppUrl("Olá! Gostaria de solicitar um diagnóstico sem custo para meu equipamento."), "_blank");
   };
 
   return (

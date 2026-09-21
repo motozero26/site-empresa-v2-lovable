@@ -190,9 +190,9 @@ const Sobre = () => {
                   <div className="flex items-start gap-2">
                     <MapPin className="w-4 h-4 text-primary shrink-0 mt-1" />
                     <div>
-                      <strong className="block text-foreground">Localização:</strong>
-                      <span className="text-muted-foreground">{companyConfig.address.city}, {companyConfig.address.state}</span>
-                      <p className="text-xs text-muted-foreground">{companyConfig.address.street} - {companyConfig.address.neighborhood}</p>
+                      <strong className="block text-foreground">Localização & Bancada Técnica:</strong>
+                      <span className="text-muted-foreground">{companyConfig.address.street}, {companyConfig.address.neighborhood}</span>
+                      <p className="text-xs text-muted-foreground">{companyConfig.address.city} - {companyConfig.address.state}, CEP: {companyConfig.address.postalCode}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">

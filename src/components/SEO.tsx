@@ -106,14 +106,16 @@ export const SEO = ({
       priceRange: "$$",
       address: {
         "@type": "PostalAddress",
+        streetAddress: `${companyConfig.address.street}, ${companyConfig.address.neighborhood}`,
         addressLocality: companyConfig.address.city,
         addressRegion: companyConfig.address.state,
+        postalCode: companyConfig.address.postalCode,
         addressCountry: companyConfig.address.country,
       },
       geo: {
         "@type": "GeoCoordinates",
-        latitude: -5.79448, // Natal, RN
-        longitude: -35.211,
+        latitude: -5.8778, // Ponta Negra, Natal - RN
+        longitude: -35.1764,
       },
       areaServed: companyConfig.serviceArea.map((area) => ({
         "@type": "AdministrativeArea",
