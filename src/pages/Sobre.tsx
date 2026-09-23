@@ -44,17 +44,16 @@ const Sobre = () => {
 
         {/* Hero Sobre */}
         <section className="py-12 sm:py-16 bg-gradient-to-b from-primary/5 via-background to-background border-b border-border">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
-              <ShieldCheck className="w-3.5 h-3.5" />
-              <span>TRANSPARÊNCIA & QUALIDADE TÉCNICA</span>
-            </div>
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center space-y-4">
+            <p className="text-xs font-semibold tracking-wider text-primary uppercase">
+              Transparência & Qualidade Técnica
+            </p>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground text-balance">
               Sobre a MWTechs
             </h1>
 
-            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-balance">
               Assistência técnica especializada em computadores e notebooks em Natal, RN, comprometida com diagnósticos sinceros, qualidade de peças e respeito pelo cliente.
             </p>
           </div>

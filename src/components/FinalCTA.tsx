@@ -13,25 +13,25 @@ const FinalCTA = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-3xl mx-auto text-center space-y-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-primary-foreground">
+          <h2 className="text-3xl sm:text-4xl font-bold text-primary-foreground text-balance">
             Não espere seu computador parar de vez
           </h2>
           
-          <p className="text-lg text-primary-foreground/90 leading-relaxed">
+          <p className="text-base sm:text-lg text-primary-foreground/90 leading-relaxed text-balance">
             Fale agora com nossos técnicos e descubra a melhor solução para seu computador.
-            <br className="hidden sm:block" />
-            Atendimento ágil, transparente e profissional — como você merece.
+            Atendimento ágil, transparente e profissional em Ponta Negra, Natal.
           </p>
           
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 border-0 text-base px-8 py-6 h-auto font-semibold shadow-lg hover:shadow-xl transition-all"
-            onClick={handleCTA}
-          >
-            <MessageCircle className="mr-2 h-5 w-5" />
-            Falar com um técnico agora
-          </Button>
+          <div className="pt-2">
+            <Button 
+              size="lg"
+              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 border-0 text-base px-8 py-6 h-auto font-semibold shadow-lg hover:shadow-xl transition-all whitespace-nowrap shrink-0"
+              onClick={handleCTA}
+            >
+              <MessageCircle className="mr-2 h-5 w-5 shrink-0" />
+              <span className="whitespace-nowrap">Falar com um técnico agora</span>
+            </Button>
+          </div>
           
           <p className="text-sm text-primary-foreground/80">
             Sem custo e sem compromisso.

@@ -49,6 +49,8 @@ export const BlogPost = ({ explicitSlug }: BlogPostProps) => {
         title={`${article.title} | MWTechs`}
         description={article.shortDesc}
         canonicalPath={`/blog/${article.slug}`}
+        ogType="article"
+        ogImage="https://www.mwtechs.com.br/og-image.png"
         breadcrumbs={[
           { name: "Blog", url: "/blog" },
           { name: article.title, url: `/blog/${article.slug}` },
@@ -78,30 +80,29 @@ export const BlogPost = ({ explicitSlug }: BlogPostProps) => {
         {/* Header do Artigo */}
         <header className="py-12 sm:py-16 bg-gradient-to-b from-primary/5 via-background to-background border-b border-border">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl space-y-4">
-            <div className="flex flex-wrap items-center gap-3 text-xs sm:text-sm text-muted-foreground">
-              <span className="px-3 py-1 rounded-full bg-primary/10 text-primary font-semibold">
-                {article.category}
-              </span>
+            <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-muted-foreground font-medium">
+              <span className="text-primary font-semibold">{article.category}</span>
+              <span aria-hidden="true" className="text-muted-foreground/40">·</span>
               <span className="flex items-center gap-1">
                 <Clock className="w-3.5 h-3.5" />
-                {article.readTime}
+                <span>{article.readTime}</span>
               </span>
-              <span>•</span>
+              <span aria-hidden="true" className="text-muted-foreground/40">·</span>
               <span>Atualizado em {new Date(article.dateModified).toLocaleDateString("pt-BR")}</span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground leading-tight text-balance">
               {article.title}
             </h1>
 
-            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-balance">
               {article.shortDesc}
             </p>
 
             <div className="pt-2">
-              <Button onClick={handleCTA} className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                <MessageCircle className="w-4 h-4 mr-2" />
-                Tirar dúvidas com técnico no WhatsApp
+              <Button onClick={handleCTA} className="bg-primary hover:bg-primary/90 text-primary-foreground whitespace-nowrap shrink-0">
+                <MessageCircle className="w-4 h-4 mr-2 shrink-0" />
+                <span className="whitespace-nowrap">Tirar dúvidas com técnico no WhatsApp</span>
               </Button>
             </div>
           </div>

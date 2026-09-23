@@ -67,24 +67,23 @@ const ManutencaoComputador = () => {
         </div>
 
         <section className="py-12 sm:py-16 bg-gradient-to-b from-primary/5 via-background to-background border-b border-border">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl text-center space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>PREVENÇÃO & PERFORMANCE MÁXIMA</span>
-            </div>
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl text-center space-y-4">
+            <p className="text-xs font-semibold tracking-wider text-primary uppercase">
+              Prevenção & Performance Máxima
+            </p>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground text-balance">
               Manutenção e Limpeza de Computadores em Natal, RN
             </h1>
 
-            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-balance">
               Evite a queima de processadores e placas de vídeo por excesso de calor ou oxidação. Mantenha seu computador frio, silencioso e com vida útil prolongada através de nossa manutenção preventiva completa.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-2">
-              <Button size="lg" onClick={handleCTA} className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 h-auto">
-                <MessageCircle className="w-5 h-5 mr-2" />
-                Agendar manutenção preventiva
+              <Button size="lg" onClick={handleCTA} className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 h-auto whitespace-nowrap shrink-0">
+                <MessageCircle className="w-5 h-5 mr-2 shrink-0" />
+                <span className="whitespace-nowrap">Agendar manutenção preventiva</span>
               </Button>
             </div>
           </div>

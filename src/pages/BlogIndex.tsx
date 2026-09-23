@@ -70,16 +70,16 @@ const BlogIndex = () => {
               </div>
             </div>
 
-            {/* Categorias em pills */}
-            <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
+            {/* Categorias com controle segmentado limpo */}
+            <div className="flex flex-wrap items-center justify-center gap-1.5 p-1 bg-muted/40 rounded-lg max-w-fit mx-auto border border-border/50">
               {categories.map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
-                  className={`text-xs sm:text-sm px-3.5 py-1.5 rounded-full transition-colors font-medium ${
+                  className={`text-xs px-3 py-1.5 rounded-md transition-colors font-medium whitespace-nowrap ${
                     selectedCategory === cat
-                      ? "bg-primary text-primary-foreground font-semibold"
-                      : "bg-muted text-muted-foreground hover:text-foreground"
+                      ? "bg-card text-foreground shadow-sm border border-border font-semibold"
+                      : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
                   {cat}
@@ -108,13 +108,12 @@ const BlogIndex = () => {
                   <Card key={article.slug} className="border-border hover:border-primary/50 bg-card transition-all flex flex-col justify-between hover:shadow-lg">
                     <CardContent className="p-6 flex flex-col justify-between h-full space-y-4">
                       <div className="space-y-3">
-                        <div className="flex items-center justify-between text-xs text-muted-foreground">
-                          <span className="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-semibold">
-                            {article.category}
-                          </span>
+                        <div className="flex items-center gap-2 text-xs text-muted-foreground font-medium">
+                          <span className="text-primary font-semibold">{article.category}</span>
+                          <span aria-hidden="true" className="text-muted-foreground/40">·</span>
                           <span className="flex items-center gap-1">
                             <Clock className="w-3.5 h-3.5" />
-                            {article.readTime}
+                            <span>{article.readTime}</span>
                           </span>
                         </div>
 

@@ -22,8 +22,13 @@ export interface SEOProps {
   article?: {
     publishedTime?: string;
     modifiedTime?: string;
+    datePublished?: string;
+    dateModified?: string;
     author?: string;
+    authorName?: string;
     section?: string;
+    headline?: string;
+    description?: string;
   };
   service?: {
     serviceType: string;
@@ -36,13 +41,16 @@ export const SEO = ({
   description,
   canonicalPath = "",
   ogType = "website",
-  ogImage = "https://www.mwtechs.com.br/favicon.png",
+  ogImage = "https://www.mwtechs.com.br/og-image.png",
   breadcrumbs,
   faqs,
   article,
   service,
 }: SEOProps) => {
-  const canonicalUrl = `${companyConfig.website}${canonicalPath.startsWith("/") ? canonicalPath : `/${canonicalPath}`}`.replace(/\/+$/, "") || companyConfig.website;
+  const canonicalUrl =
+    !canonicalPath || canonicalPath === "/"
+      ? `${companyConfig.website}/`
+      : `${companyConfig.website}${canonicalPath.startsWith("/") ? canonicalPath : `/${canonicalPath}`}`.replace(/\/+$/, "");
 
   useEffect(() => {
     // 1. Update Title
@@ -185,20 +193,25 @@ export const SEO = ({
     }
 
     // Article
-    if (article && ogType === "article") {
+    if (article) {
+      const pubDate = article.publishedTime || article.datePublished || "2025-01-01T08:00:00+00:00";
+      const modDate = article.modifiedTime || article.dateModified || new Date().toISOString();
+      const author = article.author || article.authorName || "Equipe Técnica MWTechs";
+
       schemas.push({
         "@context": "https://schema.org",
         "@type": "TechArticle",
-        headline: title,
-        description: description,
+        headline: article.headline || title,
+        description: article.description || description,
         url: canonicalUrl,
         mainEntityOfPage: {
           "@type": "WebPage",
           "@id": canonicalUrl,
         },
+        image: ogImage || `${companyConfig.website}/og-image.png`,
         author: {
           "@type": "Organization",
-          name: companyConfig.tradeName,
+          name: author,
           url: companyConfig.website,
         },
         publisher: {
@@ -206,11 +219,11 @@ export const SEO = ({
           name: companyConfig.tradeName,
           logo: {
             "@type": "ImageObject",
-            url: `${companyConfig.website}/favicon.png`,
+            url: `${companyConfig.website}/og-image.png`,
           },
         },
-        datePublished: article.publishedTime || "2025-01-01T08:00:00+00:00",
-        dateModified: article.modifiedTime || new Date().toISOString(),
+        datePublished: pubDate,
+        dateModified: modDate,
       });
     }
 

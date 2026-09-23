@@ -24,7 +24,7 @@ export const blogArticles: BlogArticle[] = [
     shortDesc: "Guia completo com testes seguros para descobrir por que o computador não dá sinal de energia, principais causas e quando levar à assistência técnica.",
     category: "Computador",
     datePublished: "2024-03-10",
-    dateModified: "2024-09-15",
+    dateModified: "2026-09-22",
     readTime: "6 min de leitura",
     definition: "Dizemos que o computador 'não liga' quando, ao pressionar o botão Power no gabinete, não há nenhuma reação física: os coolers não giram, os LEDs não acendem e não há nenhum ruído de acionamento elétrico.",
     mainCauses: [
@@ -85,7 +85,7 @@ export const blogArticles: BlogArticle[] = [
     shortDesc: "Entenda por que o notebook não liga, luz do carregador apaga ou não dá sinal. Veja testes rápidos e soluções técnicas em bancada.",
     category: "Notebook",
     datePublished: "2024-03-12",
-    dateModified: "2024-09-18",
+    dateModified: "2026-09-22",
     readTime: "7 min de leitura",
     definition: "Ocorre quando o notebook não responde ao botão de acionamento, nenhuma luz LED acende e a bateria parece não receber carga do adaptador AC.",
     mainCauses: [
@@ -141,7 +141,7 @@ export const blogArticles: BlogArticle[] = [
     shortDesc: "Saiba por que o computador fica lento com o tempo, o que causa 100% de uso de disco e como um upgrade de SSD restaura o desempenho.",
     category: "Computador",
     datePublished: "2024-03-15",
-    dateModified: "2024-09-20",
+    dateModified: "2026-09-22",
     readTime: "5 min de leitura",
     definition: "Computador que demora minutos para inicializar, trava ao alternar entre programas simples e exibe o ponteiro do mouse carregando constantemente.",
     mainCauses: [
@@ -197,7 +197,7 @@ export const blogArticles: BlogArticle[] = [
     shortDesc: "Dicas práticas e soluções definitivas para notebook travando, demorando para iniciar o Windows ou engasgando no navegador.",
     category: "Notebook",
     datePublished: "2024-03-18",
-    dateModified: "2024-09-21",
+    dateModified: "2026-09-22",
     readTime: "5 min de leitura",
     definition: "Sensação de lentidão generalizada em notebooks, especialmente ao abrir abas no Chrome, trabalhar em planilhas ou iniciar reuniões online.",
     mainCauses: [
@@ -244,7 +244,7 @@ export const blogArticles: BlogArticle[] = [
     shortDesc: "Descubra as causas de reinicializações aleatórias em computadores desktop, falhas de memória RAM, fonte defeituosa e telas azuis.",
     category: "Computador",
     datePublished: "2024-03-20",
-    dateModified: "2024-09-22",
+    dateModified: "2026-09-22",
     readTime: "6 min de leitura",
     definition: "O computador desliga e reinicia repentinamente no meio do uso, com ou sem a exibição prévia de uma Tela Azul da Morte (BSOD).",
     mainCauses: [
@@ -290,7 +290,7 @@ export const blogArticles: BlogArticle[] = [
     shortDesc: "Entenda por que o computador desliga de repente durante jogos ou trabalho, superaquecimento de CPU e defeitos na fonte de energia.",
     category: "Computador",
     datePublished: "2024-03-22",
-    dateModified: "2024-09-23",
+    dateModified: "2026-09-22",
     readTime: "5 min de leitura",
     definition: "O computador desliga repentinamente como se tivesse sido puxado da tomada, sem tela azul nem aviso prévio, e às vezes só volta a ligar após alguns minutos.",
     mainCauses: [
@@ -331,7 +331,7 @@ export const blogArticles: BlogArticle[] = [
     shortDesc: "Guia completo sobre causas de superaquecimento em notebooks, ventoinha barulhenta, perda de desempenho e como fazer a limpeza preventiva.",
     category: "Notebook",
     datePublished: "2024-03-25",
-    dateModified: "2024-09-24",
+    dateModified: "2026-09-22",
     readTime: "6 min de leitura",
     definition: "Notebook com a base ou teclado extremamente quentes ao toque, ventoinha zumbindo no máximo continuamente e perda abrupta de fluidez nos programas.",
     mainCauses: [
@@ -376,7 +376,7 @@ export const blogArticles: BlogArticle[] = [
     shortDesc: "Entenda por que o notebook diz 'Conectado mas sem carregar', falhas no pino Jack DC, cabo partido ou bateria desgastada.",
     category: "Notebook",
     datePublished: "2024-03-28",
-    dateModified: "2024-09-25",
+    dateModified: "2026-09-22",
     readTime: "5 min de leitura",
     definition: "O notebook só carrega quando o cabo é posicionado em um ângulo específico, exibe mensagem de bateria não reconhecida ou desliga assim que sai da tomada.",
     mainCauses: [
@@ -421,7 +421,7 @@ export const blogArticles: BlogArticle[] = [
     shortDesc: "Coolers giram, LEDs acendem mas a tela fica preta ou 'Sem Sinal'? Veja testes de memória RAM, placa de vídeo e cabos.",
     category: "Hardware",
     datePublished: "2024-04-02",
-    dateModified: "2024-09-26",
+    dateModified: "2026-09-22",
     readTime: "6 min de leitura",
     definition: "Você aperta o botão de ligar, os coolers do computador giram, as luzes do gabinete acendem, mas o monitor continua com a tela preta exibindo 'Sem Sinal' ou em modo de economia de energia.",
     mainCauses: [
@@ -471,7 +471,7 @@ export const blogArticles: BlogArticle[] = [
     shortDesc: "Notebook liga, acende luzes ou emite som mas a tela fica preta? Entenda problemas de cabo flat, tela queimada e chip gráfico.",
     category: "Notebook",
     datePublished: "2024-04-05",
-    dateModified: "2024-09-27",
+    dateModified: "2026-09-22",
     readTime: "6 min de leitura",
     definition: "O notebook emite sons de inicialização ou acende as luzes de teclado e energia, mas a tela permanece totalmente escura ou sem iluminação traseira (backlight).",
     mainCauses: [

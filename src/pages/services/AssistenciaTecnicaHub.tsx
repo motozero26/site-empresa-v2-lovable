@@ -63,17 +63,16 @@ const AssistenciaTecnicaHub = () => {
 
         {/* Hero do Serviço */}
         <section className="py-12 sm:py-16 bg-gradient-to-b from-primary/5 via-background to-background border-b border-border">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl text-center space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
-              <Wrench className="w-3.5 h-3.5" />
-              <span>DIAGNÓSTICO SEM CUSTO EM NATAL, RN</span>
-            </div>
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl text-center space-y-4">
+            <p className="text-xs font-semibold tracking-wider text-primary uppercase">
+              Diagnóstico sem custo em Natal, RN
+            </p>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground text-balance">
               Assistência Técnica de Computadores e Notebooks
             </h1>
 
-            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-balance">
               Soluções técnicas com rigor metodológico, peças de alta qualidade e transparência total. Cuidamos do seu equipamento desde o diagnóstico preventivo até reparos eletrônicos avançados em bancada.
             </p>
 

@@ -29,55 +29,56 @@ const Hero = () => {
             />
           </div>
 
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-xs sm:text-sm text-primary font-medium">
-            <MapPin className="w-3.5 h-3.5" />
-            <span>Atendimento em {companyConfig.address.city}, {companyConfig.address.state} e Região Metropolitana</span>
+          <div className="flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm text-muted-foreground">
+            <span className="font-semibold text-foreground">{companyConfig.address.city}, {companyConfig.address.state}</span>
+            <span className="w-1 h-1 rounded-full bg-muted-foreground/40" aria-hidden="true" />
+            <span>Ponta Negra e Região</span>
+            <span className="w-1 h-1 rounded-full bg-muted-foreground/40" aria-hidden="true" />
+            <span className="font-semibold text-primary">Diagnóstico sem custo</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-tight">
-            Assistência Técnica Especializada em{" "}
-            <span className="text-primary">Computadores e Notebooks</span>
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-tight max-w-3xl mx-auto text-balance">
+            Assistência técnica especializada em computadores e notebooks
           </h1>
 
-          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            A <strong className="text-foreground font-semibold">MWTechs</strong> oferece soluções completas em{" "}
-            <strong className="text-foreground font-semibold">diagnóstico sem custo, manutenção preventiva, reparo avançado e upgrade</strong> de alta performance para seu computador ou notebook em Natal e região.
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-balance">
+            Soluções completas em diagnóstico eletrônico de bancada, reparo em placas, manutenção preventiva e upgrades de alto desempenho para computadores e notebooks em Natal.
           </p>
 
-          {/* Destaques rápidos */}
-          <div className="flex flex-wrap items-center justify-center gap-4 text-xs sm:text-sm text-muted-foreground pt-1">
-            <div className="flex items-center gap-1.5">
-              <ShieldCheck className="w-4 h-4 text-accent" />
-              <span>Diagnóstico sem custo</span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <Wrench className="w-4 h-4 text-primary" />
-              <span>Orçamento prévio detalhado</span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <ShieldCheck className="w-4 h-4 text-accent" />
-              <span>Peças de alta procedência</span>
-            </div>
+          {/* Destaques de confiança objetivos */}
+          <div className="flex flex-wrap items-center justify-center gap-y-2 gap-x-6 text-xs sm:text-sm text-muted-foreground pt-1">
+            <span className="inline-flex items-center gap-1.5">
+              <ShieldCheck className="w-4 h-4 text-primary shrink-0" />
+              <span>Diagnóstico inicial sem custo</span>
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              <Wrench className="w-4 h-4 text-primary shrink-0" />
+              <span>Orçamento prévio aprovado por você</span>
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              <ShieldCheck className="w-4 h-4 text-primary shrink-0" />
+              <span>Garantia formal em todos os serviços</span>
+            </span>
           </div>
 
-          {/* Dual CTAs */}
+          {/* Dual CTAs com single-line discipline */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button 
               size="lg" 
-              className="w-full sm:w-auto text-base px-8 py-6 h-auto bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-lg shadow-primary/20"
+              className="w-full sm:w-auto text-base px-8 py-6 h-auto bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-lg shadow-primary/20 whitespace-nowrap shrink-0"
               onClick={handleSolicitarOrcamento}
             >
-              <MessageCircle className="mr-2 h-5 w-5" />
-              Solicitar orçamento
+              <MessageCircle className="mr-2 h-5 w-5 shrink-0" />
+              <span className="whitespace-nowrap">Solicitar orçamento</span>
             </Button>
             <Button 
               variant="outline"
               size="lg" 
-              className="w-full sm:w-auto text-base px-8 py-6 h-auto border-border hover:bg-muted font-medium"
+              className="w-full sm:w-auto text-base px-8 py-6 h-auto border-border hover:bg-muted font-medium whitespace-nowrap shrink-0"
               onClick={handleFalarTecnico}
             >
-              <Wrench className="mr-2 h-5 w-5 text-primary" />
-              Falar com um técnico
+              <Wrench className="mr-2 h-5 w-5 text-primary shrink-0" />
+              <span className="whitespace-nowrap">Falar com um técnico</span>
             </Button>
           </div>
 

@@ -26,31 +26,9 @@ export const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/80 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
-      {/* Top micro bar for Local SEO & Contact */}
-      <div className="bg-muted/40 border-b border-border/50 py-1.5 px-4 text-xs text-muted-foreground hidden md:block">
-        <div className="container mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <span>📍 Atendimento especializado em Natal, RN e Região</span>
-            <span>•</span>
-            <span>Diagnóstico sem custo e sem compromisso</span>
-          </div>
-          <div className="flex items-center gap-4">
-            <a
-              href={`tel:${companyConfig.phone}`}
-              className="hover:text-primary transition-colors flex items-center gap-1"
-            >
-              <Phone className="w-3 h-3" />
-              <span>{companyConfig.phoneDisplay}</span>
-            </a>
-            <span>•</span>
-            <span className="text-accent font-medium">WhatsApp Aberto</span>
-          </div>
-        </div>
-      </div>
-
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 sm:h-20 items-center justify-between gap-4">
-          {/* Brand Logo */}
+          {/* Zone 1: Single element Brand Wordmark / Logo */}
           <Link to="/" className="flex items-center gap-3 shrink-0" aria-label="MWTechs Início">
             <img
               src={mwtechsLogo}
@@ -223,15 +201,15 @@ export const Navbar = () => {
             </Link>
           </nav>
 
-          {/* WhatsApp Action Button */}
-          <div className="hidden sm:flex items-center gap-3">
+          {/* Zone 3: Primary Action Button */}
+          <div className="hidden sm:flex items-center gap-3 shrink-0">
             <Button
               onClick={handleWhatsApp}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-md gap-2"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-md gap-2 whitespace-nowrap shrink-0"
               size="sm"
             >
-              <MessageCircle className="w-4 h-4" />
-              <span>Solicitar Orçamento</span>
+              <MessageCircle className="w-4 h-4 shrink-0" />
+              <span className="whitespace-nowrap">Solicitar Orçamento</span>
             </Button>
           </div>
 

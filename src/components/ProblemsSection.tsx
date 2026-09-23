@@ -8,14 +8,13 @@ export const ProblemsSection = () => {
     <section className="py-20 bg-muted/20 border-t border-border" aria-labelledby="problems-heading">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-destructive/10 text-destructive text-xs font-semibold mb-3">
-            <AlertTriangle className="w-3.5 h-3.5" />
-            <span>DIAGNÓSTICO RÁPIDO</span>
-          </div>
-          <h2 id="problems-heading" className="text-3xl sm:text-4xl font-bold text-foreground">
-            Problemas que resolvemos
+          <p className="text-xs font-semibold tracking-wide text-destructive mb-2">
+            Diagnóstico e sintomas comuns
+          </p>
+          <h2 id="problems-heading" className="text-3xl sm:text-4xl font-bold text-foreground text-balance">
+            Problemas frequentes que resolvemos
           </h2>
-          <p className="text-muted-foreground text-base sm:text-lg mt-3 leading-relaxed">
+          <p className="text-muted-foreground text-base sm:text-lg mt-3 leading-relaxed text-balance">
             Identifique o sintoma do seu computador ou notebook e descubra a causa provável antes de agendar seu diagnóstico sem custo.
           </p>
         </div>
@@ -62,14 +61,15 @@ export const ProblemsSection = () => {
         <div className="mt-12 text-center bg-card p-6 rounded-xl border border-border max-w-2xl mx-auto">
           <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
             <HelpCircle className="w-4 h-4 text-primary" />
-            <span>O problema do seu equipamento não está na lista? Nós diagnosticamos gratuitamente.</span>
+            <span>O problema do seu equipamento não está listado aqui? Nós avaliamos sem custo na bancada.</span>
           </p>
           <div className="mt-3">
             <Link
               to="/blog"
-              className="text-sm font-semibold text-primary hover:underline"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
             >
-              Consulte nossa base completa de diagnósticos no Blog →
+              <span>Consulte nossa base completa de diagnósticos no blog</span>
+              <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
